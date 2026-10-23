@@ -9,7 +9,6 @@ double menu_first() {
         cout << "\nBalance set to: " << balance << "\n"; 
         return balance; 
 } 
-  //hatsune miku is my <3
 void menu(double& balance) { 
         while (true) { 
             cout << "\nw e l c o m e !"; 
@@ -50,7 +49,6 @@ void menu(double& balance) {
                         cout << "Error: Division by zero.\n"; 
                     } 
                 } 
-                // REMOVED: menu(); recursive call. The while loop will handle the reset. 
             } 
             else if (option == 2) { 
                  
@@ -58,7 +56,6 @@ void menu(double& balance) {
                 double transaction{}; 
                 cin >> transaction; 
                 balance += transaction;  
-                // REMOVED: menu(); recursive call. 
             } 
             else if (option == 3) { 
                 cout << "\nExiting menu...\n"; 
@@ -66,7 +63,6 @@ void menu(double& balance) {
             } 
             else { 
                 cout << "\nInvalid option. Try again.\n"; 
-                // REMOVED: menu(); recursive call. 
             } 
         } 
 } 
