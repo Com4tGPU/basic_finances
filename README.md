@@ -11,7 +11,7 @@ THIS IS NOT AN ACTUAL BANKING APP AND SHOULD NOT BE USED AS FINANCIAL ADVICE! Pr
 ## how to change PIN
 
 1. go to file
-2. go to line 75
+2. go to line 71
 3. Should say " double pass(3322); "
 4. change 3322 to anything you want.
 
