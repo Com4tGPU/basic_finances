@@ -71,7 +71,7 @@ int main() {
         double pass(3322); 
         double attempt{}; 
          
-        // Fixed: Replaced recursive main() with a proper while loop for the PIN check 
+    
         while (true) { 
             cout << "\n(0000 to close)\nPIN: "; 
             cin >> attempt; 
