@@ -113,6 +113,12 @@ int main() {
             break;
         }
         else {
+#ifdef _WIN32
+            std::system("cls");    // Windows
+#else
+            std::system("clear");  // macOS/Linux
+#endif
+
             cout << "\nInvalid username or password. Try again.\n";
         }
     }
