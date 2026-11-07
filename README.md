@@ -6,17 +6,17 @@ Basic Finances is a small C++ budgeting program designed for learning and demons
 - set a starting balance
 - add or subtract money from the balance
 - use a built-in calculator
-- protect access with a PIN
+- protect access with a password
 
 ## Features
-- PIN-protected access
+- Password-protected access
 - Built-in calculator
 - Balance tracking
 - Add or subtract transactions
 - Simple C++ project structure for easy learning and modification
 
 ## Project files
-- `Code/Finances.cpp` — main application source code
+- `src/finances.cpp` — main application source code
 - `Makefile` — builds the executable using `g++`
 - `LICENSE` — project license
 - `README.md` — project documentation
@@ -60,17 +60,14 @@ Then run:
 basic_finances.exe
 ```
 
-## How to change the PIN
-1. Open `Code/Finances.cpp`
-2. Find the line:
-   ```cpp
-   double pass(3322);
-   ```
-3. Replace `3322` with your preferred PIN.
+## How to change the password/username
+1. Open src/finances.cpp.
+2. find the variable containing username and password (marked by comment).
+3. change to your liking!
 
 ## Example usage
 - Start the program
-- Enter the PIN
+- Enter the password/username
 - Set an initial balance
 - Use option `1` to calculate
 - Use option `2` to add or subtract an amount
