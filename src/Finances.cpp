@@ -1,5 +1,6 @@
-#include <iostream> 
+#include <iostream>
 #include <string>
+#include <cstdlib>
 using namespace std;
 
 double menu_first() {
@@ -11,6 +12,11 @@ double menu_first() {
     return balance;
 }
 void menu(double& balance) {
+#ifdef _WIN32
+    std::system("cls");    // Windows
+#else
+    std::system("clear");  // macOS/Linux
+#endif
     while (true) {
         cout << R"ART('##:::::'##:'########:'##::::::::'######:::'#######::'##::::'##:'########:'####:
  ##:'##: ##: ##.....:: ##:::::::'##... ##:'##.... ##: ###::'###: ##.....:: ####:
@@ -58,6 +64,11 @@ void menu(double& balance) {
                     cout << "Error: Division by zero.\n";
                 }
             }
+#ifdef _WIN32
+            std::system("cls");    // Windows
+#else
+            std::system("clear");  // macOS/Linux
+#endif
         }
         else if (option == 2) {
 
@@ -65,6 +76,11 @@ void menu(double& balance) {
             double transaction{};
             cin >> transaction;
             balance += transaction;
+#ifdef _WIN32
+            std::system("cls");    // Windows
+#else
+            std::system("clear");  // macOS/Linux
+#endif
         }
         else if (option == 3) {
             cout << "\nExiting menu...\n";
@@ -77,8 +93,8 @@ void menu(double& balance) {
 }
 
 int main() {
-	string pass{ "password123" }; //change password here
-	string user_name{ "user" }; //change username here
+    string pass{ "password123" }; //change password here
+    string user_name{ "user" }; //change username here
 
     while (true) {
         string input_user_name{};
