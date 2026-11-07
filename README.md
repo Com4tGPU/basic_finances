@@ -8,7 +8,7 @@ This is a small C++ budgeting program that lets you:
 - use a built-in calculator
 
 ## Features
-- PIN-protected access
+- Password-protected access
 - Built-in calculator
 - Balance tracking
 - Add or subtract transactions
@@ -32,11 +32,10 @@ basic_finances.exe
    ./finances
    ```
 
-## How to change the PIN
-1. Open `Code/Finances.cpp`
-2. Find the line with:
-   `double pass(3322);`
-3. Replace `3322` with your preferred PIN
+## How to change the password & username
+1. Open src/finances.cpp.
+2. Find the line that stores the password and username variables (marked by a comment).
+3. Change to your liking!
 
 ## Disclaimer
 This project is for learning and demonstration purposes only. It is not a real banking app and should not be used for actual financial decisions.
