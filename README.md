@@ -1,10 +1,10 @@
 # BASIC_FINANCES
 
-**Latest release: [v0.1.1 beta](https://github.com/Com4tGPU/basic_finances/releases/tag/v0.1.1)** — a pre-release that adds credential login and moves the source into the `src/` directory.
+**Latest release: [v0.1.2 beta](https://github.com/Com4tGPU/basic_finances/releases/tag/v0.1.2)**
 
 > **Disclaimer:** This is not an actual banking app and must not be used for financial advice or real financial decisions. It is an educational project only.
 
-Basic Finances is a small C++ program that lets you set a starting balance, add or subtract amounts, and use a basic calculator.
+Basic Finances is a small C++ program that lets you set a starting balance, add or subtract amounts, and use a built-in calculator.
 
 ## Features
 
@@ -16,7 +16,7 @@ Basic Finances is a small C++ program that lets you set a starting balance, add 
 
 ## Download the release
 
-Download the Windows executable (`Finances.exe`) or the `Makefile` from the [v0.1.1 beta release page](https://github.com/Com4tGPU/basic_finances/releases/tag/v0.1.1). This is a pre-release intended for testing and demonstration; behavior may change.
+Download the Windows executable (`Finances.exe`) from the [v0.1.2 beta release page](https://github.com/Com4tGPU/basic_finances/releases/tag/v0.1.2). This is a beta release intended for testing and demonstration; features and behavior may change.
 
 ## Build from source
 
