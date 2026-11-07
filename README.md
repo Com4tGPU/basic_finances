@@ -1,77 +1,73 @@
 # BASIC_FINANCES
 
-THIS IS NOT AN ACTUAL BANKING APP AND SHOULD NOT BE USED AS FINANCIAL ADVICE.
+**Latest release: [v0.1.1 beta](https://github.com/Com4tGPU/basic_finances/releases/tag/v0.1.1)** — a pre-release that adds credential login and moves the source into the `src/` directory.
 
-Basic Finances is a small C++ budgeting program designed for learning and demonstration purposes. It allows you to:
-- set a starting balance
-- add or subtract money from the balance
-- use a built-in calculator
-- protect access with a password
+> **Disclaimer:** This is not an actual banking app and must not be used for financial advice or real financial decisions. It is an educational project only.
+
+Basic Finances is a small C++ program that lets you set a starting balance, add or subtract amounts, and use a basic calculator.
 
 ## Features
-- Password-protected access
-- Built-in calculator
-- Balance tracking
-- Add or subtract transactions
-- Simple C++ project structure for easy learning and modification
 
-## Project files
-- `src/finances.cpp` — main application source code
-- `Makefile` — builds the executable using `g++`
-- `LICENSE` — project license
-- `README.md` — project documentation
+- Username and password prompt before entering the program
+- Set and view a balance
+- Add or subtract an amount from the balance
+- Built-in calculator for addition, subtraction, multiplication, and division
+- Menu-based command-line interface
 
-## Pre-release status
-This project is currently in a pre-release / testing stage. Features and behavior may change before the next stable version.
+## Download the release
 
-Use this software for educational purposes only and do not rely on it for actual financial decisions or banking operations.
+Download the Windows executable (`Finances.exe`) or the `Makefile` from the [v0.1.1 beta release page](https://github.com/Com4tGPU/basic_finances/releases/tag/v0.1.1). This is a pre-release intended for testing and demonstration; behavior may change.
 
-## How to build
+## Build from source
+
+The project requires a C++17-compatible compiler and GNU Make.
 
 ### Linux/macOS
-From the project root, run:
+
+From the repository root, run:
 
 ```bash
 make
-```
-
-This will build the executable:
-
-```bash
 ./basic_finances
 ```
 
-To remove build artifacts:
+To remove the generated executable and object files:
 
 ```bash
 make clean
 ```
 
 ### Windows
-If you are building on Windows with a C++ toolchain, you can compile with:
+
+With `g++` installed, compile the source from the repository root:
 
 ```powershell
-g++ Code/Finances.cpp -o basic_finances.exe
+g++ -std=c++17 -Wall -Wextra -O2 src/Finances.cpp -o Finances.exe
 ```
 
 Then run:
 
 ```powershell
-basic_finances.exe
+.\Finances.exe
 ```
 
-## How to change the password/username
-1. Open src/finances.cpp.
-2. find the variable containing username and password (marked by comment).
-3. change to your liking!
+## Login credentials
 
-## Example usage
-- Start the program
-- Enter the password/username
-- Set an initial balance
-- Use option `1` to calculate
-- Use option `2` to add or subtract an amount
-- Use option `3` to exit
+The current credentials are defined in `src/Finances.cpp` and can be changed there. The source currently uses `user` as the username and `password123` as the password. These are hard-coded demonstration credentials, not secure authentication; do not use this program to protect sensitive information.
 
-## Disclaimer
-This project is for learning and demonstration purposes only. It is not a real banking app, should not be used for actual financial decisions, and is not a substitute for professional financial advice.
+## Using the program
+
+After logging in, enter a starting balance. In the main menu:
+
+1. Choose **Calculator** to enter two whole numbers and an operator (`+`, `-`, `*`, or `/`).
+2. Choose **Add charge/deposit** to enter a positive or negative amount to apply to the balance.
+3. Choose **Exit** to quit.
+
+## Project files
+
+- `src/Finances.cpp` — application source code
+- `Makefile` — builds the `basic_finances` executable with `g++`
+- `LICENSE` — project license
+- `README.md` — project documentation
+
+Use this software for learning and demonstration purposes only. It is not a real banking app, is not financial advice, and is not a substitute for professional financial guidance.
